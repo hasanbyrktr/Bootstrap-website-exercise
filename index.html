@@ -1,152 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-        }
-      nav {
-        background-color: #2d3e50;
-        height: 100px;
-        text-align: center;
-        color: #fffefe;
-      }
-      #link-top {
-        text-decoration: none;
-        color: #fffefe;
-      }
-     .nav-link:hover:hover{
-        color: #1bbc9b;
-        
-     }
-     .nav-link{
-        color: #fffefe;
-     }
-    #main-content{
-        width: 100%;
-        height: 700px;
-       background-color: #1bbc9b;
-       text-align: center;
-       padding-top: 200px;
-    }
-    #main-img{
-        height: 250px;
-    
-    }
-    #portfolio{
-        background-color: #fffefe;
-        min-height: 900px;
-        text-align: center;
-    }
-    #about{
-        width: 100%;
-        height: 500px;
-       background-color: #1bbc9b;
-       text-align: center;
-       padding-top: 70px;
-        color: #fffefe;
-    }
-    #footer-div{
-        background-color: #2d3e50;
-        padding-top:60px   ;
-    }
-    #copyright{
-        background-color: #1b252f;
-        color: #fffefe;
-    }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <title>Freelancer Start Bootstrap Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Freelancer Start Bootstrap</title>
   </head>
-  <body>
-    <nav id="page-top">
-      <div class="container-fluid pt-4">
-        <div class="row">
-          <div class="col-3">
-            <h2><a id="link-top" href="#page-top">START BOOTSTRAP</a></h2>
-          </div>
-          <div class="col offset-6">
-            <h6 ><a class="nav-link" href="#portfolio">PORTFOLIO</a></h6>
-          </div>
-          <div  class="col">
-            <h6 ><a class="nav-link" href="#about">ABOUT</a></h6>
+  <body>          
+    <!-- Navbar bölümü -->
+    <nav class="navbar navbar-expand-lg nav-bg">
+        <div class="container py-3">
+          <a class="navbar-brand text-white fs-3 fw-semibold" href="#" >START BOOTSTRAP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" >PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white" aria-disabled="true">ABOUT</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </nav>
-
-    <div id="main-content">
-        <img  id="main-img" src="images/main.png" alt="image">
-        <p class="display-3 fw-semibold mt-4 text-white">START BOOTSTRAP</p>
-        <p class="fs-4 text-white">Graphic Artist - Web Designer - Illustrator</p>
-    </div>
-
-
-    <div id="portfolio" class="container-fluid">
-        <p class="display-5 fw-bold pt-5 mt-5" style="color: #2c3e52;">PORTFOLIO</p>
-        <div class="row">
-            <div class="col-4 col-sm-6 col-md-4 col-xl-4 pt-3"><img class="img-fluid" src="images/cabin.png" alt="cabin" style="border-radius: 25px;"></div>
-            <div class="col-4 col-sm-6 col-md-4 col-xl-4 pt-3"><img class="img-fluid" src="images/cake.png" alt="cake" style="border-radius: 25px;"></div>
-            <div class="col-4 col-sm-6 col-md-4 col-xl-4 pt-3"><img class="img-fluid" src="images/circus.png" alt="circus" style="border-radius: 25px;"></div>
-            <div class="col-4 col-sm-6 col-md-4 col-xl-4 pt-3"><img class="img-fluid" src="images/game.png" alt="game" style="border-radius: 25px;"></div>
-            <div class="col-4 col-sm-6 col-md-4 col-xl-4 pt-3"><img class="img-fluid" src="images/safe.png" alt="safe" style="border-radius: 25px;"></div>
-            <div class="col-4 col-sm-6 col-md-4 col-xl-4 pt-3"><img class="img-fluid" src="images/submarine.png" alt="submarine" style="border-radius: 25px;"></div>
-        </div>
-    </div>
-    
-    <div id="about" class="container-fluid mt-5 justify-content-center">
-        <p class="display-4 fw-bolder" >ABOUT</p>
-            <div class="row justify-content-center mt-5" style="text-align: left;">
-                <div class="col-4 d-flex justify-content-center">
-                    <p style="font-size: 1.3em; text-align: left;">Freelancer is a free bootstrap theme created by Start Bootstrap.
-                        The download includes the complete source files including
-                        HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-4 d-flex justify-content-center">
-                    <p style="font-size: 1.3em; text-align: left;">You can create your own custom avatar for the masthead
-                    ,change the icon in the dividers, and add your email
-                    address to the contact form to make it fully functional!</p>
+      </nav>
+    <!-- Header bölümü -->
+    <header class="main-bg pt-5 pb-5">
+        <div class="container pt-5 pb-5">
+            <div class="img-container d-flex justify-content-center pt-5 pb-5">
+                <img src="assets/favicp.svg" alt="main-photo" style="width: 18%;">
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center display-2 fw-semibold text-white"><p>START BOOTSTRAP</p>
                 </div>
             </div>
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center fs-4">Graphic Artist - Web Designer - Illustrator</div>
+            </div>
         </div>
+    </header>
+    <!-- içerik bölümü -->
+    <article class="article-container pt-5">
+        <div class="container text-header display-5 fw-semibold text-center mt-5">
+            <p>PORTFOLIO</p>
+        </div>
+
+    <div class="container pb-5">
+        <div class="row">
+            <!-- img fluid sayesinde col'un içi kadar yer kaplar fotolar -->
+            <div class="col-12 col-md-6 col-lg-4 pt-3">
+                <img class="rounded img-fluid" src="assets/cabin.png" alt="cabin">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-3">
+                <img class="rounded img-fluid" src="assets/cake.png" alt="cake">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-3">
+                <img class="rounded img-fluid" src="assets/circus.png" alt="circus">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-3">
+                <img class="rounded img-fluid" src="assets/game.png" alt="game">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-3">
+                <img class="rounded img-fluid" src="assets/safe.png" alt="safe">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-3">
+                <img class="rounded img-fluid" src="assets/submarine.png" alt="submarine">
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT bölümü -->
+    <div class="about-container pt-5 text-center">
+        <div class="container display-5 fw-semibold text-white">
+            <p>ABOUT</p>
+        </div>
+
+    <div class="container pb-5">
+        <div class="row text-white justify-content-center ">
+            <div class="col-12 col-lg-4 text-start fs-5 pt-5">
+                <p>Freelancer is a free bootstrap theme created by Start Bootstrap.
+                The download includes the complete source files including HTML, CSS, and JavaScript
+                 as well as optional SASS stylesheets for easy customization.</p>
+                </div>
+            <div class="col-12 col-lg-4 text-start fs-5 pt-5">
+                <p>You can create your own custom avatar for the masthead,
+                 change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+            </div>
             
-        <footer>
-        <div id="footer-div" class="container-fluid text-white">
-          <div class="row text-center">
-            <div class="col-md-4 mb-4">
-              <h4>LOCATION</h4>
-              <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
-            </div>
-            <div class="col-md-4 mb-4">
-              <h4>AROUND THE WEB</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsum!</p>
-            </div>
-            <div class="col-md-4 mb-4">
-              <h4>ABOUT FREELANCER</h4>
-              <p>Freelancer is a free to use, MIT licensed <br>Bootstrap theme created by Start Bootstrap.</p>
-            </div>
-          </div>
         </div>
-      </footer>
-      
-      <div id="copyright" class="container-fluid pt-2">
-        <div class="row justify-content-center">
-            <div class="col text-center">
-                <p>Copyright © Your Website 2023</p>
+        <button type="button" class="btn btn-success ">DOWNLOAD</button>
+    </div>    
+
+    </div>
+    </article>
+
+    <footer class="footer-container">
+
+        <div class="container  pt-5 pb-5">
+
+            <div class="row text-white text-center">
+                <div class="col-lg-4">
+                    <p class="fs-3 fw-semibold">LOCATION</p>
+                    <p>2215 John Daniel Drive
+                        Clark, MO 65243</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fs-3 fw-semibold">AROUND THE WEB</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsum!</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fs-3 fw-semibold">ABOUT FREELANCER</p>
+                    <p>Freelancer is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
+                </div>
             </div>
-        </div>
-      </div>
 
 
+
+        </div>
+
+    </footer>
+    <div class="copyright-container">
+        <div class="container text-danger text-center pt-3 pb-3">
+            <p>Copyright © Your Website 2023</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+   
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
