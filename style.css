@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+.nav-bg{
+    background-color: #2b3d51;
+}
+
+.main-bg{
+    background-color: #2cbb9d;
+}
+.about-container{
+    background-color: #2cbb9d;
+}
+.footer-container{
+    background-color: #2d3e50;
+
+}
+.copyright-container{
+    background-color:antiquewhite;
+}
