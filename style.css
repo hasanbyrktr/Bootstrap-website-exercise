@@ -18,3 +18,17 @@
 .copyright-container{
     background-color:antiquewhite;
 }
+#footer-link:hover{
+    color:forestgreen;   
+}
+#footer-link{
+    color:#2cbb9d;
+}
+#download-button{
+    background-color: #2cbb9d;
+}
+#download-button:hover{
+    background-color: whitesmoke !important;
+    transition: 0.5s !important;
+    color:black;
+}
